@@ -12,9 +12,12 @@ You are required to help the manager to predict the right group of the new custo
 
 ## Neural Network Model
 
-<img width="1027" height="695" alt="548853387-1440702b-e4af-497b-ae63-09ea9058293f" src="https://github.com/user-attachments/assets/a0dd31a4-f2f1-4bd9-a34d-16d6136134a3" />
+<img width="1027" height="695" alt="image" src="https://github.com/user-attachments/assets/1440702b-e4af-497b-ae63-09ea9058293f" />
+
 
 ## DESIGN STEPS
+
+
 ### STEP 1: 
 Load the dataset, remove irrelevant columns (ID), handle missing values, encode categorical features using Label Encoding, and encode the target class (Segmentation).
 
@@ -31,20 +34,21 @@ Convert the scaled training and testing data into PyTorch tensors and create Dat
 Design a feedforward neural network with multiple fully connected layers and ReLU activation functions, ending with an output layer for multi-class classification.
 
 ### STEP 5: 
+
 Train the model using CrossEntropyLoss and Adam optimizer by performing forward propagation, loss calculation, backpropagation, and weight updates over multiple epochs.
 
 
 ### STEP 6: 
-
 Evaluate the trained model on test data using accuracy, confusion matrix, and classification report, and perform prediction on a sample input.
+
 
 
 
 ## PROGRAM
 
-### Name:SUJITH RB 
+### Name: SUJITH RB
 
-### Register Number:212224103003
+### Register Number: 212224103003
 
 ```python
 import torch
@@ -180,29 +184,31 @@ print("Name: SUJITH RB")
 print("Register No:212224103003")
 print(f'Predicted class for sample input: {predicted_class_label}')
 print(f'Actual class for sample input: {label_encoder.inverse_transform([y_test[12].item()])[0]}')
-
 ```
 
 ### Dataset Information
-<img width="1254" height="251" alt="image" src="https://github.com/user-attachments/assets/30ca514c-f752-4d37-9fcb-d2c5a726ec66" />
+
+<img width="1290" height="259" alt="image" src="https://github.com/user-attachments/assets/873f98cb-d3a0-413f-97e9-eef5e279db88" />
 
 
 ### OUTPUT
-
-<img width="261" height="59" alt="image" src="https://github.com/user-attachments/assets/4264ffa4-9729-43c1-88f2-b03ab11bff7d" />
+<img width="300" height="88" alt="image" src="https://github.com/user-attachments/assets/09da559d-5894-4aa9-b842-7162234434d7" />
 
 
 ## Confusion Matrix
 
-<img width="539" height="455" alt="download" src="https://github.com/user-attachments/assets/71d1b1f0-534d-4c46-aaad-1ba4eb83c9e2" />
+<img width="667" height="562" alt="image" src="https://github.com/user-attachments/assets/d28fbf54-f9f3-43e8-8027-c1ccb394973b" />
 
 
 ## Classification Report
-<img width="541" height="243" alt="image" src="https://github.com/user-attachments/assets/013f8e97-5604-411d-b424-03e30596c4b2" />
+
+<img width="642" height="450" alt="image" src="https://github.com/user-attachments/assets/ee63166b-147e-485a-b085-c49a8f06596a" />
 
 
 ### New Sample Data Prediction
-<img width="359" height="87" alt="image" src="https://github.com/user-attachments/assets/1bcde9e7-c829-42c3-9d59-2ade66b892f7" />
+
+<img width="364" height="96" alt="image" src="https://github.com/user-attachments/assets/5815e4f0-fafe-4607-884d-61cb9a6c5c77" />
+
 
 
 ## RESULT
